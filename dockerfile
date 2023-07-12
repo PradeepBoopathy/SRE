@@ -15,4 +15,4 @@ ENV PORT 4000
 
 ENTRYPOINT ["python"]
 
-CMD ["database/db.py && python app.py"]
+CMD ["app.py"]
