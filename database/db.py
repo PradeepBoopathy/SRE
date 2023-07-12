@@ -29,13 +29,9 @@ async def create_sample_table():
                 )
                 await conn.commit()
     finally:
-        conn.close()
-        await conn.wait_closed()
+        pass
 
-
-# Run the create_sample_table function
 async def run_create_sample_table():
     await create_sample_table()
 
-# Run the function asynchronously
 asyncio.run(run_create_sample_table())
